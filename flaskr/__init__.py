@@ -42,7 +42,7 @@ def create_app(test_config=None):
     @app.route('/api/tickets')
     def api_tickets():
         tickets = Ticket.query.all()
-        return jsonify(tickets)
+        return jsonify([ticket.to_json() for ticket in tickets])
 
     @app.route('/api/tickets/<int:ticket_id>')
     def api_tickets_show(ticket_id):
@@ -51,7 +51,6 @@ def create_app(test_config=None):
         except exc.NoResultFound:
             return jsonify({'error': 'Ticket not found'}), 404
         else:
-            return jsonify(ticket)
-
+            return jsonify(ticket.to_json())
 
     return app
