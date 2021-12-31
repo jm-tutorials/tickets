@@ -17,16 +17,16 @@ To run this web application first start the lab, linked above at the top of this
 <br>Then clone this repo to the server you want to run the flask app from. This could be from the cloud server workstation provided with the lab, your local machine, or where have you. If not using the lab provided workstation make sure you have <a href='https://www.python.org/downloads/'>python3</a> and <a href='https://pipenv.pypa.io/en/latest/install/'>Pipenv</a> installed on the machine.
 <br>Next create the below environment variables, coinciding with the a cloud guru provided database server information, on the server where you will be running the flask app:
 <ul>
-  <li>DB_HOST='<DB_PRIVATE_IP>'</li>
-  <li>DB_NAME='<DB_NAME>'</li>
-  <li>DB_PASSWORD='<DB_PASSWORD>'</li>
-  <li>DB_PORT='<DB_PORT>'</li>
-  <li>DB_USERNAME='<DB_USERNAME>'</li>
+  <li>DB_HOST='\<DB_PRIVATE_IP\>'</li>
+  <li>DB_NAME='\<DB_NAME\>'</li>
+  <li>DB_PASSWORD='\<DB_PASSWORD\>'</li>
+  <li>DB_PORT='\<DB_PORT\>'</li>
+  <li>DB_USERNAME='\<DB_USERNAME\>'</li>
   <li>FLASK_ENV='development'</li>
   <li>FLASK_APP='./flaskr/'</li>
 </ul>
-if doing this in a .env file remember to source it afterwards (`source .env` for the unitiated)
-<br>Run `pipenv install` to install the project dependencies and create a virtual environemnt. Then run `pipenv shell` to activate the the newly minted virtual environment
+if doing this in a .env file remember to source it afterwards (```source .env``` for the unitiated)
+<br>Run ```pipenv install``` to install the project dependencies and create a virtual environemnt. Then run ```pipenv shell``` to activate the the newly minted virtual environment
 <br>Finally you can start the app with `flask run --host=0.0.0.0 --port=3000` and you can open the ip address in your favorite browser
 
 
