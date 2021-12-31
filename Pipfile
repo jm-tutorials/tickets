@@ -7,7 +7,7 @@ verify_ssl = true
 
 [packages]
 flask = "*"
-pyscopg2 = "*"
+psycopg2 = "*"
 flask-sqlalchemy = "*"
 python-dotenv = "*"
 psycopg2-binary = "*"
