@@ -18,11 +18,11 @@ To run this web application first start the lab, linked above at the top of this
 <br>Next create the below environment variables, coinciding with the a cloud guru provided database server information, on the server where you will be running the flask app:
 <ul>
   <li>DB_HOST='<DB_PRIVATE_IP>'</li>
-  <li>DB_NAME='<DB_NAME>'<</li>
+  <li>DB_NAME='<DB_NAME>'</li>
   <li>DB_PASSWORD='<DB_PASSWORD>'</li>
   <li>DB_PORT='<DB_PORT>'</li>
-  <li>DB_USERNAME='<DB_USERNAME>'<</li>
-  <li>FLASK_ENV='development';</li>
+  <li>DB_USERNAME='<DB_USERNAME>'</li>
+  <li>FLASK_ENV='development'</li>
   <li>FLASK_APP='./flaskr/'</li>
 </ul>
 if doing this in a .env file remember to source it afterwards (`source .env` for the unitiated)
